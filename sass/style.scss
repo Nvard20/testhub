@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+$blue:#328BE0;
+$white: white;
+$blackBlue:#25334A;
+.header {
+    margin-top: 16px;
+    .inner-header{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 24px;
+        @media (max-width:500px){
+            &{
+                flex-direction: column;
+                align-items: center;
+                .menu-hd{
+                    margin-top: 15px;
+                    
+                }
+            }
+        }
+    }
+    .menu-hd{
+        display: flex;
+        align-items: center;
+
+    }
+
+}
+.logo{
+    .logo-link {
+        width:90px;
+        display: block;
+    }
+}
+.search{
+    margin-right: 40px;
+    @media (max-width:500px){
+
+        & {
+            margin-right: 15px;
+        
+        }
+    }
+}
+.auth-btns {
+    display: flex;
+    a{
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $blue;
+        text-decoration: none;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 4px rgba(37, 51, 74, 0.05), 0px 4px 8px rgba(37, 51, 74, 0.05);
+        border-radius: 2px;
+        display: block;
+        text-align: center;
+        padding: 14px 24px;
+        text-transform: uppercase;
+
+}
+.reg{
+    background-color: $blue;
+    color: $white;
+    margin-left: 24px;
+    
+}
+}
+.main-container{
+    max-width: 1434px;
+    margin: auto;
+    margin-top: 112px;
+    @media (max-width:1000px){
+        &{
+            margin-top: 50px;
+          
+        }
+    }
+    .connect-container{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1335px;
+        @media (max-width: 1450px){
+            &{
+                justify-content: space-around;
+                max-width: unset;
+            }
+        }
+        @media (max-width: 1000px){
+            &{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        .easy-connect{
+            max-width: 586px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            @media (max-width:1250px){
+                &{
+                    max-width: 470px;
+                }
+            }
+            @media (max-width:550px){
+                &{
+                    margin: 0 20px;
+                 
+                    
+                }
+            }
+            .easytitle{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 56px;
+                line-height: 60px;
+                margin-bottom: 8px;
+                color: $blackBlue;
+                @media (max-width:1250px){
+                    &{
+                        font-size: 45px;
+                    }
+                }
+                @media (max-width:550px){
+                    &{
+                        font-size: 35px;
+                    }
+                }
+            }
+            .line{
+                width: 114px;
+                height: 4px;
+                background-color: $blue;
+                margin-right: 15px;
+                margin-bottom: 28px;
+            }
+            p{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 28px;
+                color: $blackBlue;
+                margin-bottom: 40px;
+                max-width: 570px;
+                @media (max-width:550px){
+                    &{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .auth-btns > a{
+                width: 200px;
+                @media (max-width:1000px){
+                    &{
+                        width: unset;
+                    }
+                }
+                @media (max-width:550px){
+                    &{
+                        padding: 14px 8px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .img-connect{
+            max-width: 530px;
+            position: relative;
+            @media (max-width:1000px){
+                &{
+                    margin-top: 45px;
+                  
+                }
+            }
+            .conectBox{
+                max-width: 440px;
+                border-radius: 8px;
+                @media (max-width:1250px){
+                    &{
+                        max-width: 380px;
+                    }
+                }
+                @media (max-width:550px){
+                    &{
+                        max-width: 300px;
+                    }
+                }
+                @media (max-width:400px){
+                    &{
+                        max-width: 215px;
+                    }
+                }
+                img{
+                    width: 100%;
+                    border-radius: 8px;
+
+                }
+            }
+            .icon > img{
+                width: 100%;
+                height: 100%;
+            }
+            .icon-1{
+                position: absolute;
+                top: 73px;
+                left: -75px;
+                width: 150px;
+                @media (max-width:550px){
+                    &{
+                        width: 108px;
+                        left: -50px
+                       
+                        
+                    }
+                }
+                @media (max-width:400px){
+                    &{
+                        width: 74px;
+                        left: -32px;
+                        top:36px;
+                        
+                    }
+                }
+                
+            }
+            .icon-2{
+                position: absolute;
+                top: 261px;
+                left: -65px;
+                width: 111px;
+                @media (max-width:550px){
+                    &{
+                        left: -40px;
+                        width:74px;
+                        
+                    }
+                }
+                @media (max-width:400px){
+                    &{
+                        left: -40px;
+                        width:64px;
+                        top:132px
+                    }
+                }
+                
+            }
+            .icon-3{
+                position: absolute;
+                bottom: -45px;
+                left:61px;
+                width: 117px;
+                @media (max-width:550px){
+                    &{
+                        left: 85px;
+                        width: 90px;
+                        
+                    }
+                }
+                @media (max-width:400px){
+                    &{
+                        left: 15px;
+                        width: 68px;
+                        bottom: -35px;
+
+                       
+                                          
+                    }
+                }
+            }
+            .icon-4{
+                position: absolute;
+                bottom: -31px;
+                left:236px;
+                width: 78px;
+                @media (max-width:550px){
+                    &{
+                        width: 60px;
+                        
+                    }
+                }
+                @media (max-width:400px){
+                    &{
+                        width: 47px;
+                        bottom: -28px;
+                        left: 141px;
+                    }
+                }
+
+        }
+            .icon-5{
+                position: absolute;
+                bottom: 60px;
+                right:-31px;
+                width: 54px;
+            }
+            .icon-6{
+                position: absolute;
+                bottom: 200px;
+                right:-90px;
+                width: 63px;
+              
+                
+                @media (max-width:1400px){
+                    &{
+                        right: -40px;
+                       
+                    }
+                }
+                @media (max-width:550px){
+                    &{
+                        width: 40px;
+                        
+                    }
+                }
+                @media (max-width:400px){
+                    &{
+                        width: 40px;
+                        bottom: 147px;
+                        right: -44px;
+                        
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+.adv-container{
+    max-width: 1311px;
+    margin: auto;
+    margin-top: 69px;
+    margin-bottom: 14px;
+        h3{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: $blackBlue;
+            margin-bottom: 48px;
+        }
+        .inner-adv{
+            display: flex;
+            flex-wrap: wrap;
+    justify-content: center;
+            .item-adv{
+                max-width: 397px;
+                margin-bottom: 65px;
+                margin-left: 35px;
+                margin-right: 35px;
+
+                h6{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                    letter-spacing: 0.15px;
+                    color: $blackBlue;
+                    margin-bottom: 16px;
+                }
+                p{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-align: center;
+                    color: $blackBlue;
+                    max-width: 279px;
+                    margin: auto;
+                }
+                .icon-adv{
+                    width: 72px;
+                    height: 72px;
+                    margin: auto;
+                    margin-bottom: 54px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+}
