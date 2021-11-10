@@ -16,20 +16,20 @@ $gray: #94A7BC;
         margin: 0 24px;
         align-items: center;
 
-        @media (max-width:900px){
+        @media (max-width:600px){
             &{
                 flex-direction: column;
                 align-items: center;
                 .menu-hd{
                     margin-top: 15px;
                     flex-wrap: wrap;
-                    align-items: center;
+                    align-items: baseline;
                     justify-content: center;
                     .auth-btns{
                         margin-top: 10px;
                     }
                     .search{
-                        margin-right: 0;
+                        margin-right: 12px;
                     }
                 }
             }
@@ -1827,6 +1827,17 @@ img{
 .cont{
     margin-left: 255px;
     width: 100%;
+    @media (max-width:600px){
+        &{
+            margin-left: 90px;
+        }
+    }
+    @media (max-width:500px){
+        &{
+            margin-left: 90px;
+            overflow-x: auto;
+        }
+    }
     .inner-cont{
         margin: 0 24px;
         .header{
@@ -1835,6 +1846,15 @@ img{
                 @media (max-width:767px){
                     &{
                         flex-direction: column;
+                    }
+                }
+                .menu-hd{
+                    .auth-btns{
+                        @media (max-width: 450px){
+                            &{
+                                flex-direction: column;
+                            }
+                        }
                     }
                 }
             }
@@ -1846,19 +1866,38 @@ img{
 	height: 100%;
 	background: rgba(37, 51, 74, 1);
 	position: fixed;
+    @media (max-width:600px){
+        &{
+            width: 90px;
+        }
+    }
 .bar-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 16px 24px;
+    @media (max-width:600px){
+        &{
+            margin: 10px 5px;
+            
+        }
+    }
     .logoimg{
         width: 90px;
+        @media (max-width:600px){
+            width: 60px;
+        }
         >img{
             width:100%;
         }
         
     }
     .closimg{
+        @media (max-width:600px){
+            &{
+                display: none;
+            }
+        }
         >img{
             width:24px;
         }
@@ -1884,10 +1923,21 @@ img{
 	display: flex;
     align-items: center;
     padding: 0 24px;
+    @media (max-width:600px){
+        &{
+            padding: 0 5px;
+        }
+
+    }
     > img{
         width: 20px;
         height: auto;
         margin-right: 16px;
+        @media (max-width:600px){
+            &{
+                display: none;
+            }
+        }
     }
 	a {
 		padding: 12px 0;
@@ -1899,6 +1949,11 @@ img{
 		letter-spacing: 0.1px;
 		color: #f5f9fd;
         text-decoration: none;
+        @media (max-width: 600px){
+            &{
+                font-size: 12px;
+            }
+        }
 	}
     &:hover{
         background-color: $blue;
@@ -1921,6 +1976,11 @@ color: $blackBlue;
     
     ul{
         display: flex;
+        @media (max-width:600px) {
+            &{
+                overflow-x: auto;
+            }
+        }
         li{
             list-style: none;
             padding: 12px 0;
@@ -2000,6 +2060,11 @@ color: $blackBlue;
                         margin-right: 20px;
                     }
                 }
+                @media (max-width: 600px){
+                    &{
+                        max-width: 145px !important;
+                    }
+                }
                 .eye-box{
                     background: rgba(46, 58, 89, 0.3);
                     background-blend-mode: multiply;
@@ -2026,6 +2091,13 @@ color: $blackBlue;
                         letter-spacing: 0.4px;
 
                         color: #FFFFFF;
+                        @media (max-width: 600px){
+                            &{
+                                top: 50px;
+                                left: 110px;
+
+                            }
+                        }
                     img{
                         transform: rotate(
                             90deg);
@@ -2060,6 +2132,8 @@ color: $blackBlue;
                     }
                     .usbtns{
                         display: flex;
+                        flex-wrap: wrap;
+
                     }
                     .usbt{
                         width: 60px;
@@ -2150,9 +2224,14 @@ color: $blackBlue;
 .menu-hd {
     ul{
         display: flex;
-        li{
+                li{
             list-style: none;
             margin-right: 30px;
+            @media (max-width: 500px){
+                &{
+                    margin-right: 10px;
+                }
+            }
             a{
                 font-family: Roboto;
                 font-style: normal;
