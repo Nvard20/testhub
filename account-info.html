@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>Account-info</title>
+</head>
+<body>
+    <header class="header">
+        <div class="inner-header">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/Logo.png" alt="">
+                </a>
+            </div>
+            <div class="menu-hd">
+
+                <div class="search">
+                    <img src="img/search.png" alt="">
+                </div>
+                <div class="search">
+                    <img src="img/notification-2.png" alt="">
+                </div>
+                <div class="auth-btns">
+                    <a href="registration.html" class="reg" mat-button>Создать трансляцию</a>
+
+                </div>
+                <div class="account_img">
+                    <img src="img/account.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="account-settings">
+        <h2>Настройки аккаунта</h2>
+        <nav class="settings-menu">
+            <ul>
+                <li><a href="javascript:void(0)" class=" sets-link" id="info">информация</a></li>
+                <li><a href="javascript:void(0)" class="sets-link" id="pass">Пароль</a></li>
+                <li><a href="javascript:void(0)" class="sets-link active-link" id="rasp">Рассписание стримов</a></li>
+                <li><a href="javascript:void(0)" class="sets-link">Донат</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="stream-container stream">
+            <h3>Добавить стрим в расписание</h3>
+            <div class="regform">
+                <form action="">
+                    <div class="input-item">
+                        <p>Название стрима</p>
+                        <input type="text" placeholder="Tell your viewers what they’re in for">
+                    </div>
+                    <div class="input-item">
+                        <p>Категория</p>
+                        <input type="text" placeholder="Спорт, образование">
+                    </div>
+              
+                    <div class="div-time">
+                        <div class="input-item">
+                            <p>Начало</p>
+                            <input type="text" placeholder="14:00">
+                        </div>
+                        <span>на</span>
+                        <div class="input-item">
+                            <p>Часы</p>
+                            <input type="text" placeholder="2">
+                        </div>
+                        <div class="input-item">
+                            <p>Минуты</p>
+                            <input type="text" placeholder="30">
+                        </div>
+                    </div>
+                    <div class="week-btns">
+                        <h3>Каждые</h3>
+                        <div class="btnsgroup">
+                            <button class="btn">Понедельник</button>
+                            <button class="btn">Вторник</button>
+                            <button class="btn">Среда</button>
+                            <button class="btn">Четверг</button>
+                            <button class="btn">Пятница</button>
+                            <button class="btn">Суббота</button>
+                            <button class="btn">Воскресенье</button>
+                        </div>
+                    </div>
+                    <div class="auth-btns">
+                        <a href="#" class="reg">Сохранить</a>
+                    </div>
+                </form>
+               </div>
+        </div>
+        <div class="stream-container pass-page">
+            <h3>Сменить пароль</h3>
+            <div class="regform">
+                <form action="">
+                    <div class="input-item">
+                        <p>Старый пароль</p>
+                        <input type="password" >
+                        <img src="img/eye.png" alt="" class="eye">
+                    </div>
+                    <div class="input-item">
+                        <p>Новый пароль</p>
+                        <input type="password" >
+                        <img src="img/eye.png" alt="" class="eye">
+
+                    </div>
+                    <div class="input-item">
+                        <p>Повторите новый пароль</p>
+                        <input type="password" >
+                        <img src="img/eye.png" alt="" class="eye">
+
+                    </div>
+                    <div class="auth-btns">
+                        <a href="#" mat-button="">назад</a>
+                        <a href="#" class="reg" mat-button="">Создать</a>
+    
+                    </div>
+                </form>
+               </div>
+        </div>
+        <div class="stream-container info-account">
+            <h3>Фото профиля</h3>
+            <div class="photo-settings">
+                <div class="ph-box">
+                    <img src="img/Vector.png" alt="">
+                </div>
+                <button><img src="img/activity.png" alt=""></button>
+            </div>
+            <div class="regform">
+                <form action="">
+                    <div class="input-item">
+                        <p>Имя аккаунта</p>
+                        <input type="text" placeholder="Nick">
+                    </div>
+                    <div class="input-item">
+                        <p>Ф.И.О</p>
+                        <input type="text" placeholder="Smith">
+                    </div>
+                    <div class="input-item">
+                        <p>Персональная информация</p>
+                        <input type="text" placeholder="Hello every one. I am very proud to be part">
+                    </div>
+                    <h4>Про канал</h4>
+                    <div class="input-item">
+                        <p>Тема канала</p>
+                        <input type="text" placeholder="Education">
+                    </div>
+                    <div class="input-item">
+                        <p>Ваш опыт в этой теме</p>
+                        <input type="text" placeholder="6 years as a head of marketing">
+                    </div>
+                    <div class="input-item">
+                        <p>Что вы можете узнать на канале</p>
+                        <input type="text" placeholder="basics ">
+                    </div>
+                    <h4>Социальные сети</h4>
+                    <div class="input-item">
+                        <p>Vk.com</p>
+                        <input type="text" placeholder="vk.com/profile ">
+                    </div>
+                    <div class="input-item">
+                        <p>Facebook</p>
+                        <input type="text" placeholder="facebook.com/profile ">
+                    </div>
+                    <div class="input-item">
+                        <p>Instagram</p>
+                        <input type="text" placeholder="Instagram.com/profile ">
+                    </div>
+                    <div class="input-item">
+                        <p>Telegram</p>
+                        <input type="text" placeholder="@username ">
+                    </div>
+                    <h4>Дополнительная информация</h4>
+                    <div class="div-more">
+                        <div class="input-item">
+                            <p>Название поля</p>
+                            <input type="text" placeholder=" ">
+                        </div>
+                        <button><img src="img/add-more.png" alt=""></button>
+                    </div>
+                    <div class="auth-btns">
+                        <a href="login.html" mat-button>Назад</a>
+                        <a href="registration.html" class="reg" mat-button>Сохранить</a>
+    
+                    </div>
+                </form>
+               </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
