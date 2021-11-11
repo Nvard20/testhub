@@ -10,6 +10,7 @@ $blackBlue:#25334A;
 $gray: #94A7BC;
 .header {
     margin-top: 16px;
+    position: relative;
     .inner-header{
         display: flex;
         justify-content: space-between;
@@ -2391,3 +2392,61 @@ color: $blackBlue;
     right: 0;
     top: 5px;
   }
+  .auth-settings{
+      background-color: $white;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05), 0px 2px 4px rgba(37, 51, 74, 0.05);
+    border-radius: 2px;
+    max-width: 221px;
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    z-index: 9;
+   
+  }
+
+  .lang{
+    background-color: $white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05), 0px 2px 4px rgba(37, 51, 74, 0.05);
+  border-radius: 2px;
+  max-width: 221px;
+  position: absolute;
+  z-index: 9;
+  right: 230px;
+top: 175px;
+  }
+  .setInner{
+    padding: 18px;
+    .setitem{
+        margin-bottom: 16px;
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            img{
+                width: 32px;
+                height: 32px;
+                object-fit: contain;
+            }
+            .fname{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.15px;
+                margin-left: 24px;
+                color: #294F79;
+            }
+            .fname-set{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.15px;
+                margin-left: 16px;
+                color: #294F79;
+            }
+        }
+    }
+}
