@@ -3018,8 +3018,40 @@
   color: #294F79;
 }
 
+.members {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .members {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .shc-box {
   max-width: 569px;
+  width: 50%;
+}
+
+@media (max-width: 1450px) {
+  .shc-box {
+    width: 48%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .shc-box {
+    width: 100%;
+    max-width: unset;
+  }
 }
 
 .shc-box .item-user {

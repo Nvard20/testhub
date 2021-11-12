@@ -2488,9 +2488,32 @@ display: none;
         }
     }
 }
+.members{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1000px){
+        &{
+            flex-direction: column;
+
+        }
+    }
+}
 .shc-box{
     max-width: 569px;
+    width: 50%;
+    @media (max-width: 1450px){
+        &{
+            width: 48%;
 
+        }
+    }
+    @media (max-width: 1000px){
+        &{
+            width: 100%;
+            max-width: unset;
+
+        }
+    }
     .item-user{
         margin: 16px 0;
         display: flex;
