@@ -25,7 +25,7 @@ $gray: #94A7BC;
                     margin-top: 15px;
                     flex-wrap: wrap;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: start;
                     .auth-btns{
                         margin-top: 10px;
                     }
@@ -2592,4 +2592,202 @@ display: none;
 .search-page{
     margin-top: 58px;
     margin-bottom: 20px;
+}
+.members-content{
+    margin-top: 56px;
+    margin-bottom: 42px;
+}
+.member{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1285px;
+    @media (max-width: 1000px){
+        &{
+            flex-direction: column;
+            justify-content: start;
+            align-items: flex-start;
+        }
+    }
+    .member-item{
+        display: flex;
+        @media (max-width: 400px){
+            &{
+                flex-direction: column;
+            }
+        }
+        .memb-img{
+            width: 72px;
+            height: 72px;
+            border-radius: 2px;
+            margin-right: 24px;
+            >img{
+                border-radius: 2px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .memb-name{
+            h6{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 34px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.18px;
+                color: $blackBlue;
+            }
+            p{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                /* identical to box height, or 129% */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.1px;
+
+                /* Grey */
+
+                color: #94A7BC;
+
+                opacity: 0.8;
+            }
+        }
+    }
+}
+.member-soc{
+    display: flex;
+    align-items: center;
+    @media (max-width:1000px) {
+        &{
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+    }
+    .soc{
+        display: flex;
+
+        a{
+            
+                text-decoration: none;
+                background-color: $blue;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                margin-right: 24px;
+                justify-content: center;
+
+            @media (max-width:400px){
+                &{
+                    margin-right: 8px;
+                    
+                }
+            }
+        }
+    }
+    .more{
+        cursor: pointer;
+    }
+}
+.membsinfo{
+    display: flex;
+    @media (max-width:1000px){
+        &{
+            flex-direction: column;
+        }
+    }
+}
+.info-container{
+    margin-right: 16px;
+}
+.information{
+background: #F5F9FD;
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05), 0px 2px 4px rgba(37, 51, 74, 0.05);
+border-radius: 4px;
+margin-bottom: 20px;
+padding-bottom: 1px;
+max-width: 450px;
+    .infohd{
+        background:$blue;
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1.25px;
+        text-transform: uppercase;
+        color: $white;
+        padding: 8px 15px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    .info-text{
+        padding: 24px 16px;
+        p{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color:$blackBlue;
+            margin: 16px 0;
+        
+        }
+    }
+    .infbox{
+        background: rgba(214, 232, 249, 0.5);
+        border-radius: 4px;
+        margin: 16px;
+        padding: 16px;
+        .usbtns{
+            display: flex;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        .usbt{
+            width: 44px;
+            height: 16px;
+            background: #D6E8F9;
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 8px;
+            line-height: 16px;
+            color: $blackBlue;
+            text-decoration: none;
+            margin-right: 8px;
+        }
+        .infhd{
+            display: flex;
+            justify-content: space-between;
+            a{
+                width: 24px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $white;
+            }
+            .inftitle{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.25px;
+                color: $blackBlue;
+            }
+        }
+    }
 }
