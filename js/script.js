@@ -53,3 +53,9 @@ $('.link-1').click(function(){
     $('.inner-1').show();
     $('.inner-2').hide();
 });
+$('.account_img').click(function(){
+    $('.auth-settings').toggle();
+});
+$('.lang-item').click(function(){
+    $('.lang').toggle();
+});

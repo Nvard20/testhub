@@ -45,6 +45,7 @@ $gray: #94A7BC;
             height: 48px;
             border-radius: 2px;
             margin-left: 15px;
+            cursor: pointer;
                 > img{
                     width: 100%;
                     height: 100%;
@@ -1395,7 +1396,6 @@ img{
 }
 .broadcast{
     margin: 130px auto;
-    max-width: 700px;
     
 }
 @media(max-width:767px){
@@ -1411,6 +1411,8 @@ img{
     background-color: $white;
     border-radius: 4px;
     padding: 40px;
+    max-width: 700px;
+    margin: auto;
     h2{
         font-family: Roboto;
         font-style: normal;
@@ -1978,6 +1980,18 @@ font-size: 20px;
 line-height: 24px;
 letter-spacing: 0.15px;
 color: $blackBlue;
+display: flex;
+flex-direction: column;
+span{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.4px;
+color: #94A7BC;
+
+}
 }
 .cat-nav{
     margin-bottom: 40px;
@@ -2015,6 +2029,17 @@ color: $blackBlue;
     }
 }
 .populiar-broadcast{
+    h6{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.15px;
+        color: #94A7BC;
+    }
     h2{
         font-family: Roboto;
         font-style: normal;
@@ -2401,9 +2426,15 @@ color: $blackBlue;
     right: 0px;
     top: 60px;
     z-index: 9;
-   
+   display: none;
+   @media (max-width: 900px){
+       &{
+        top: 100px;
+        
+       }
+   }
   }
-
+  
   .lang{
     background-color: $white;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05), 0px 2px 4px rgba(37, 51, 74, 0.05);
@@ -2413,6 +2444,13 @@ color: $blackBlue;
   z-index: 9;
   right: 230px;
 top: 175px;
+display: none;
+@media (max-width: 600px){
+    &{
+        right: 75px;
+        top:220px;
+    }
+}
   }
   .setInner{
     padding: 18px;
@@ -2449,4 +2487,86 @@ top: 175px;
             }
         }
     }
+}
+.shc-box{
+    max-width: 569px;
+
+    .item-user{
+        margin: 16px 0;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:500px){
+            &{
+                justify-content: start;
+                flex-direction: column;
+            }
+        }
+        .pr{
+            cursor: pointer;
+            background-color: $blue;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05), 0px 2px 4px rgba(37, 51, 74, 0.05);
+            border-radius: 2px;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            font-family: Roboto;
+            border: none;
+            color: $white;
+            margin-left: 0px;
+            padding: 4px 36px;
+            width: 160px;
+            @media (max-width:500px){
+                &{
+                    margin-top: 20px;
+                }
+            }
+        }
+        .prig{
+            background-color: $white;
+            color: $blue;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05), 0px 2px 4px rgba(37, 51, 74, 0.05);
+            border-radius: 2px;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            font-family: Roboto;
+            border: none;
+            cursor: pointer;
+            padding: 4px 36px;
+            width: 160px;
+            @media (max-width:500px){
+                &{
+                    margin-top: 20px;
+                }
+            }
+        }
+        .sch-us{
+            display: flex;
+            align-items: center;
+            > img{
+                width: 48px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                border-radius: 2px;
+            }
+            p{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                color: $blackBlue;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.search-page{
+    margin-top: 58px;
+    margin-bottom: 20px;
 }
