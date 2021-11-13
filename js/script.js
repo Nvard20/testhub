@@ -59,3 +59,11 @@ $('.account_img').click(function(){
 $('.lang-item').click(function(){
     $('.lang').toggle();
 });
+$('.akt').click(function(){
+$('.all-st').hide();
+$('.alltrans').show();
+});
+$('.allf').click(function(){
+    $('.all-st').show();
+    $('.alltrans').hide();
+    });
