@@ -2798,6 +2798,7 @@ max-width: 450px;
     background-color: $blackBlue;
     position: absolute;
     top: 100px;
+    display: none;
     @media (max-width:500px){
         &{
             min-width: unset;

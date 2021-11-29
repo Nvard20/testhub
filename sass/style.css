@@ -3446,6 +3446,7 @@
   background-color: #25334A;
   position: absolute;
   top: 100px;
+  display: none;
 }
 
 @media (max-width: 500px) {

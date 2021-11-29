@@ -67,3 +67,6 @@ $('.allf').click(function(){
     $('.all-st').show();
     $('.alltrans').hide();
     });
+$('.translink').click(function(){
+    $('.statist-container').toggle();
+});
